@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Pedido</title>
 
 </head>
@@ -49,22 +48,11 @@
 </style>
 
 <script>
-    const sim = () => {
-        Swal.fire({
-            title: 'Parabéns !!',
-            text: 'Você aceitou namorar comigo 😛',
-            imageWidth: 100,
-            imageHeight: 100,
-            theme: 'dark',
-
-            didOpen: (popup) => {
-                popup.style.borderRadius = '25px';
-            }
-        })
-        // alert('Voçê aceitou namorar comigo !! 😛');
+    function sim() {
+        alert('Voçê aceitou namorar comigo !! 😛');
 
     }
-    const desvia = (t) => {
+    function desvia(t) {
         var btn = t;
         btn.style.position = 'absolute';
         btn.style.bottom = geraPosicao(10, 90);
@@ -72,7 +60,7 @@
         console.log('opa, desviei');
     }
 
-    const geraPosicao = (min, max) => {
+    function geraPosicao(min, max) {
         return (Math.random() * (max - min) + min) + '%';
     }
 </script>
